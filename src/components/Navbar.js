@@ -59,27 +59,27 @@ const Navbar = () => {
                     <div className="fixed right-0 z-20 bg-black w-full py-10 flex flex-col justify-center items-center lg:hidden text-white">
                         <ul className="text-base font-semibold flex items-center flex-col justify-center gap-8">
                             <li>
-                                <NavLink to="/" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? " text-violet-500 cursor-pointer transition-all py-4" : "" }>
+                                <NavLink to="/" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? " text-violet-500 cursor-pointer transition-all py-4" : "" } onClick={() => setMobileDrawerOpen(false)}>
                                 Home
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/about" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? " text-violet-500 cursor-pointer transition-all py-4" : "" }>
+                                <NavLink to="/about" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? " text-violet-500 cursor-pointer transition-all py-4" : "" } onClick={() => setMobileDrawerOpen(false)}>
                                 About
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/pricing"pricing className={({ isActive, isPending }) => isPending ? "pending" : isActive ? " text-violet-500 cursor-pointer transition-all py-4" : "" }>
+                                <NavLink to="/pricing"pricing className={({ isActive, isPending }) => isPending ? "pending" : isActive ? " text-violet-500 cursor-pointer transition-all py-4" : "" } onClick={() => setMobileDrawerOpen(false)}>
                                 Pricing
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/features" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? " text-violet-500 cursor-pointer transition-all py-4" : "" }>
+                                <NavLink to="/features" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? " text-violet-500 cursor-pointer transition-all py-4" : "" } onClick={() => setMobileDrawerOpen(false)}>
                                 Features
                                 </NavLink>
                             </li>
                         </ul>
-                        <div className="flex space-x-6 font-semibold py-8" >
+                        <div className="flex space-x-6 font-semibold py-8" onClick={() => setMobileDrawerOpen(false)} >
                             <a href="/contact" className="bg-white rounded-lg py-2 px-10 text-black">Contact</a>
                         </div>
                     </div>
