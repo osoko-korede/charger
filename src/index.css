@@ -7,3 +7,9 @@
 :root {
   font-family: Manrope, sans-serif;
 }
+
+@layer utilities {
+  .max-container {
+    @apply mx-auto md:max-w-[1200px] px-5;
+  }
+}
